@@ -30,13 +30,7 @@ header {
     left: 70%;
 }
 
-input[name="user"] {
-    width: 145px;
-    background-color: white;
-    color: #1c1e21;
-}
-
-input[name="psw"] {
+input[name="user"], input[name="psw"] {
     width: 145px;
     background-color: white;
     color: #1c1e21;
@@ -72,6 +66,10 @@ input[value="Log in"] {
     height: 24px;
 }
 
+input[value="Log in"]:hover {
+    background-color: #22468d;
+}    
+
 /* Create an account */
 .create-account {
     display: flex;
@@ -88,5 +86,65 @@ input[value="Log in"] {
 .map {
     content: url(images/map.png);
     width: 450px;
+}
+
+.create-account-input {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    color: #333333;
+    font-size: 18px;
+}
+
+.account-title {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+input[name="fullname"] {
+    width: 175px;
+    font-size: 18px;
+    padding: 8px 10px;
+    border: 1px #bdc7d8 solid;
+    border-radius: 5px;
+    background-color: white;
+    color: #333333;
+    margin: 0px 8px 10px 0px;
+    outline: none;
+}
+
+input[name="userid"], input[name="newpsw"] {
+    width: 380px;
+    font-size: 18px;
+    padding: 8px 10px;
+    border: 1px #bdc7d8 solid;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+input[placeholder="First name"], input[placeholder="Surname"], input[placeholder="Mobile number or email address"], input[placeholder="New password"] {
+    color: #999999;
+}
+
+input[name="fullname"]:focus, [name="userid"]:focus, input[name="newpsw"]:focus {
+    color: #333333;
+} 
+
+input[name="fullname"]:valid, [name="userid"]:valid, input[name="newpsw"]:valid {
+    color: #333333;
+} 
+
+.name {
+    display: flex;
+    flex-direction: row;
+}
+
+.birthday {
+    margin-top: 10px;
+    padding: 0;
 }
 

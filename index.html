@@ -8,25 +8,39 @@
     <body>
         <header>
             <div class="logo"></div>
-            <div class="email-phone">
-                <p>Email or Phone</p>
-                <input type="text" name="user">
-            </div>
-            <div class="password">
-                <p>Password</p>
-                <input type="password" name="psw">
-                <p class="forgot-account">Forgotten account?</p>
-            </div>
-            <div class="login-button">
-                <input type="button" value="Log in">
-            </div>
+            <form>
+                <div class="email-phone">
+                    <p>Email or Phone</p>
+                    <input type="text" name="user">
+                </div>
+                <div class="password">
+                    <p>Password</p>
+                    <input type="password" name="psw">
+                    <p class="forgot-account">Forgotten account?</p>
+                </div>
+                <div class="login-button">
+                    <input type="button" value="Log in">
+                </div>
+            </form>
         </header>
         <div class="create-account">
             <div class="text-map">
                 <p>Facebook helps you connect and share with the people in your life.</p>
                 <div class="map"></div>
             </div>
-            <div></div>
+            <div class="create-account-input">
+                <p class="account-title">Create an account</p>
+                <p>It's free and always will be.</p>
+                <form>
+                    <div class="name">
+                        <input type="text" name="fullname" placeholder="First name">
+                        <input type="text" name="fullname" placeholder="Surname">
+                    </div>
+                    <input type="text" name="userid" placeholder="Mobile number or email address">
+                    <input type="password" name="newpsw" placeholder="New password">
+                    <p class="birthday">Birthday</p>
+                </form>
+            </div>
         </div>
     </body>
 </html>
