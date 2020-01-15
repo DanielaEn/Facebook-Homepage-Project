@@ -11,7 +11,7 @@ body {
 /* Header */
 
 header {
-    background-color: #3B5998;
+    background-color: #3C5B9A;
     position: relative;
     height: 100px;
     color: white;
@@ -34,6 +34,7 @@ input[name="user"], input[name="psw"] {
     width: 145px;
     background-color: white;
     color: #1c1e21;
+    outline: none;
 }
 
 .password {
@@ -112,7 +113,7 @@ input[name="fullname"] {
     background-color: white;
     margin: 0px 8px 10px 0px;
     outline: none;
-}
+}   
 
 input[name="userid"], input[name="newpsw"] {
     width: 380px;
@@ -125,17 +126,13 @@ input[name="userid"], input[name="newpsw"] {
     outline: none;
 }
 
-input[placeholder="First name"], input[placeholder="Surname"], input[placeholder="Mobile number or email address"], input[placeholder="New password"] {
-    color: #999999;
+input:focus  {
+    color: #333333;
 }
 
-input[name="fullname"]:focus, [name="userid"]:focus, input[name="newpsw"]:focus {
+input:valid  {
     color: #333333;
-} 
-
-input[name="fullname"]:valid, [name="userid"]:valid, input[name="newpsw"]:valid {
-    color: #333333;
-} 
+}
 
 .name {
     display: flex;
@@ -147,3 +144,70 @@ input[name="fullname"]:valid, [name="userid"]:valid, input[name="newpsw"]:valid 
     padding: 0;
 }
 
+select {
+    background-color: #fff;
+    color: #1c1e21;
+    font-size: 14px;
+    border: 1px #bdc7d8 solid;
+    outline: none;
+    height: 30px;
+    padding: 5px;
+    float: left;
+    margin-left: 2px;
+}
+
+.info {
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 1px;
+    float: left;
+    width: 170px;
+    color: #385898;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin: 10px;
+}
+
+.terms-and-conditions {
+    color: #777;
+    font-size: 11px;
+    width: 316px;
+    text-decoration: none;
+}
+
+a:link {
+    color: #385898;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #385898;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+  
+a:active {
+    text-decoration: underline;
+}
+
+input[value="Sign Up"] {
+    background-color: #67ae55;
+    color: white;
+    border: 1px #3b6e22 solid;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input[value="Sign Up"]:hover {
+    background-color: #578843; 
+}
